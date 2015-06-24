@@ -10,6 +10,10 @@
 		A73266891B3A9B2900144710 /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A73266881B3A9B2900144710 /* LoginView.swift */; };
 		A732668D1B3A9CF700144710 /* logo.png in Resources */ = {isa = PBXBuildFile; fileRef = A732668B1B3A9CF700144710 /* logo.png */; };
 		A732668E1B3A9CF700144710 /* text_field.png in Resources */ = {isa = PBXBuildFile; fileRef = A732668C1B3A9CF700144710 /* text_field.png */; };
+		A73266901B3A9DC300144710 /* UnderlineTextfield.swift in Sources */ = {isa = PBXBuildFile; fileRef = A732668F1B3A9DC300144710 /* UnderlineTextfield.swift */; };
+		A73266941B3AAD9C00144710 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A73266931B3AAD9C00144710 /* ViewController.swift */; };
+		A73266971B3AAE3200144710 /* Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = A73266961B3AAE3200144710 /* Extension.swift */; };
+		A74050981B3AB96F0059E4F7 /* UnderlineButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = A74050971B3AB96F0059E4F7 /* UnderlineButton.swift */; };
 		A7A1DBCE1AAB09B300125DE5 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7A1DBCD1AAB09B300125DE5 /* AppDelegate.swift */; };
 		A7A1DBD51AAB09B300125DE5 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A7A1DBD41AAB09B300125DE5 /* Images.xcassets */; };
 		A7A1DBD81AAB09B300125DE5 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = A7A1DBD61AAB09B300125DE5 /* LaunchScreen.xib */; };
@@ -32,6 +36,10 @@
 		A73266881B3A9B2900144710 /* LoginView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
 		A732668B1B3A9CF700144710 /* logo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = logo.png; sourceTree = "<group>"; };
 		A732668C1B3A9CF700144710 /* text_field.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = text_field.png; sourceTree = "<group>"; };
+		A732668F1B3A9DC300144710 /* UnderlineTextfield.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UnderlineTextfield.swift; sourceTree = "<group>"; };
+		A73266931B3AAD9C00144710 /* ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		A73266961B3AAE3200144710 /* Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Extension.swift; sourceTree = "<group>"; };
+		A74050971B3AB96F0059E4F7 /* UnderlineButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UnderlineButton.swift; sourceTree = "<group>"; };
 		A7A1DBC81AAB09B300125DE5 /* ubit.info.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ubit.info.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A7A1DBCC1AAB09B300125DE5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		A7A1DBCD1AAB09B300125DE5 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -72,6 +80,33 @@
 			path = Resources;
 			sourceTree = "<group>";
 		};
+		A73266911B3A9DCB00144710 /* XIBs */ = {
+			isa = PBXGroup;
+			children = (
+				A7A1DBD61AAB09B300125DE5 /* LaunchScreen.xib */,
+				A7FC694E1B3A8D1D0096A5D5 /* LoginViewController.xib */,
+			);
+			name = XIBs;
+			sourceTree = "<group>";
+		};
+		A73266921B3AAC5B00144710 /* Custom view */ = {
+			isa = PBXGroup;
+			children = (
+				A732668F1B3A9DC300144710 /* UnderlineTextfield.swift */,
+				A74050971B3AB96F0059E4F7 /* UnderlineButton.swift */,
+			);
+			name = "Custom view";
+			sourceTree = "<group>";
+		};
+		A73266951B3AADA300144710 /* Library */ = {
+			isa = PBXGroup;
+			children = (
+				A73266931B3AAD9C00144710 /* ViewController.swift */,
+				A73266961B3AAE3200144710 /* Extension.swift */,
+			);
+			name = Library;
+			sourceTree = "<group>";
+		};
 		A7A1DBBF1AAB09B300125DE5 = {
 			isa = PBXGroup;
 			children = (
@@ -96,10 +131,11 @@
 				A7A1DBCD1AAB09B300125DE5 /* AppDelegate.swift */,
 				A7FC694A1B3A8CE90096A5D5 /* LoginViewController.swift */,
 				A73266881B3A9B2900144710 /* LoginView.swift */,
-				A7FC694E1B3A8D1D0096A5D5 /* LoginViewController.xib */,
+				A73266951B3AADA300144710 /* Library */,
+				A73266921B3AAC5B00144710 /* Custom view */,
+				A73266911B3A9DCB00144710 /* XIBs */,
 				A7A1DBF51AABCD7400125DE5 /* L.playground */,
 				A7A1DBD41AAB09B300125DE5 /* Images.xcassets */,
-				A7A1DBD61AAB09B300125DE5 /* LaunchScreen.xib */,
 				A732668A1B3A9CF700144710 /* Resources */,
 				A7A1DBCB1AAB09B300125DE5 /* Supporting Files */,
 			);
@@ -233,8 +269,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A73266941B3AAD9C00144710 /* ViewController.swift in Sources */,
 				A73266891B3A9B2900144710 /* LoginView.swift in Sources */,
 				A7FC694B1B3A8CE90096A5D5 /* LoginViewController.swift in Sources */,
+				A74050981B3AB96F0059E4F7 /* UnderlineButton.swift in Sources */,
+				A73266971B3AAE3200144710 /* Extension.swift in Sources */,
+				A73266901B3A9DC300144710 /* UnderlineTextfield.swift in Sources */,
 				A7A1DBCE1AAB09B300125DE5 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

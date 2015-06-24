@@ -8,6 +8,8 @@
 
 import UIKit
 
-class LoginViewController: UIViewController {
+class LoginViewController: ViewController {
+  @IBOutlet weak var logoYConstraint: NSLayoutConstraint!
+  @IBOutlet weak var logoView: UIImageView!
   
 }

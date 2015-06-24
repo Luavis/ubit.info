@@ -1,14 +1,9 @@
 // Playground - noun: a place where people can play
 
-import Cocoa
+import Foundation
 
-class Person {
-  var residence: Residence?
-}
 
-class Residence {
-  var numberOfRooms = 1
-}
 
-var person = Person()
-var room = person.residence!.numberOfRoom
+0x10 >> 2
+
+CGFloat(10) + CGFloat(10) / 10.0

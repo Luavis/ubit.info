@@ -16,6 +16,15 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
   func application(application: UIApplication, didFinishLaunchingWithOptions launchOptions: [NSObject: AnyObject]?) -> Bool {
     
+    var window = UIWindow(frame: UIScreen.mainScreen().bounds)
+    
+    var loginViewController:LoginViewController = LoginViewController(nibName: "LoginViewController", bundle: nil)
+    
+    window.rootViewController = loginViewController
+    window.makeKeyAndVisible()
+    
+    self.window = window
+    
     return true
   }
 

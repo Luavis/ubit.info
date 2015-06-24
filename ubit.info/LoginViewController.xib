@@ -7,6 +7,8 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="LoginViewController" customModule="ubit_info" customModuleProvider="target">
             <connections>
+                <outlet property="logoView" destination="wvK-cx-5jL" id="kTn-Bl-omP"/>
+                <outlet property="logoYConstraint" destination="sX6-Vm-sXK" id="yYa-r5-1d2"/>
                 <outlet property="view" destination="iQi-2K-r1d" id="7Gu-4n-qSf"/>
             </connections>
         </placeholder>
@@ -38,16 +40,82 @@
                         <constraint firstAttribute="width" secondItem="wvK-cx-5jL" secondAttribute="height" multiplier="39:16" id="UrO-Mk-P58"/>
                     </constraints>
                 </imageView>
+                <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="XlW-aH-jF5" customClass="UnderlineTextfield" customModule="ubit_info" customModuleProvider="target">
+                    <rect key="frame" x="65" y="297" width="220" height="30"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                    <textInputTraits key="textInputTraits"/>
+                </textField>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="ID" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dZk-sI-O2J">
+                    <rect key="frame" x="40" y="300" width="17" height="21"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="21" id="IWB-LC-Wwf"/>
+                        <constraint firstAttribute="width" constant="17" id="u5H-6a-LoI"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                    <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="aQh-W0-Iom" customClass="UnderlineTextfield" customModule="ubit_info" customModuleProvider="target">
+                    <rect key="frame" x="65" y="336" width="220" height="30"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <textInputTraits key="textInputTraits"/>
+                </textField>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="PW" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xZd-g0-Zyt">
+                    <rect key="frame" x="30" y="338" width="27" height="21"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="21" id="Hvg-c8-IEZ"/>
+                        <constraint firstAttribute="width" constant="27" id="JzZ-f9-cV6"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                    <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="iaD-Mr-stL" customClass="UnderlineButton" customModule="ubit_info" customModuleProvider="target">
+                    <rect key="frame" x="128" y="416" width="59" height="24"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="24" id="f6y-c6-95r"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <state key="normal" title="Sign up">
+                        <color key="titleColor" red="0.20000000000000001" green="0.20000000000000001" blue="0.20000000000000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5ap-QH-2Fm" customClass="UnderlineButton" customModule="ubit_info" customModuleProvider="target">
+                    <rect key="frame" x="130" y="383" width="54" height="25"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="25" id="6Bu-bP-rIn"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <state key="normal" title="Sign In">
+                        <color key="titleColor" red="1" green="0.22745098039215686" blue="0.49019607843137253" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                </button>
             </subviews>
             <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
             <constraints>
+                <constraint firstItem="xZd-g0-Zyt" firstAttribute="leading" secondItem="iQi-2K-r1d" secondAttribute="leading" constant="30" id="4dI-Gz-DqY"/>
                 <constraint firstAttribute="centerX" secondItem="tt3-HK-WGt" secondAttribute="centerX" id="4xh-UI-EpV"/>
                 <constraint firstAttribute="trailing" secondItem="6wJ-pt-aSW" secondAttribute="trailing" id="7lT-FQ-ByW"/>
+                <constraint firstAttribute="trailing" secondItem="XlW-aH-jF5" secondAttribute="trailing" constant="29" id="Cmx-ic-xgf"/>
+                <constraint firstAttribute="centerX" secondItem="5ap-QH-2Fm" secondAttribute="centerX" id="Dj5-gT-9co"/>
+                <constraint firstItem="xZd-g0-Zyt" firstAttribute="top" secondItem="dZk-sI-O2J" secondAttribute="bottom" constant="17" id="EHQ-b4-mWf"/>
                 <constraint firstAttribute="trailing" secondItem="wvK-cx-5jL" secondAttribute="trailing" constant="18" id="HnE-V1-m8b"/>
                 <constraint firstAttribute="bottom" secondItem="tt3-HK-WGt" secondAttribute="bottom" constant="8" id="Jzm-7w-HQG"/>
+                <constraint firstItem="iaD-Mr-stL" firstAttribute="top" secondItem="5ap-QH-2Fm" secondAttribute="bottom" constant="8" id="NUf-7n-kfY"/>
+                <constraint firstItem="XlW-aH-jF5" firstAttribute="baseline" secondItem="dZk-sI-O2J" secondAttribute="baseline" id="TTF-Mf-9y2"/>
                 <constraint firstAttribute="bottom" secondItem="6wJ-pt-aSW" secondAttribute="bottom" constant="50" id="Uf6-AE-Xz3"/>
                 <constraint firstItem="wvK-cx-5jL" firstAttribute="leading" secondItem="iQi-2K-r1d" secondAttribute="leading" constant="18" id="YVu-Hh-Uf9"/>
+                <constraint firstItem="6wJ-pt-aSW" firstAttribute="top" secondItem="iaD-Mr-stL" secondAttribute="bottom" constant="47" id="blV-MP-yz0"/>
                 <constraint firstItem="6wJ-pt-aSW" firstAttribute="leading" secondItem="iQi-2K-r1d" secondAttribute="leading" id="cgW-h6-xEM"/>
+                <constraint firstItem="dZk-sI-O2J" firstAttribute="leading" secondItem="iQi-2K-r1d" secondAttribute="leading" constant="40" id="exe-HJ-LSb"/>
+                <constraint firstItem="aQh-W0-Iom" firstAttribute="leading" secondItem="xZd-g0-Zyt" secondAttribute="trailing" constant="8" id="ezS-ui-c50"/>
+                <constraint firstAttribute="centerY" secondItem="dZk-sI-O2J" secondAttribute="centerY" constant="-40" id="kD8-LP-Osy"/>
+                <constraint firstAttribute="centerX" secondItem="iaD-Mr-stL" secondAttribute="centerX" id="lD5-vg-CBi"/>
+                <constraint firstItem="XlW-aH-jF5" firstAttribute="leading" secondItem="dZk-sI-O2J" secondAttribute="trailing" constant="8" id="ngk-Yl-NTh"/>
+                <constraint firstAttribute="trailing" secondItem="aQh-W0-Iom" secondAttribute="trailing" constant="29" id="oyb-1U-XqJ"/>
+                <constraint firstItem="xZd-g0-Zyt" firstAttribute="baseline" secondItem="aQh-W0-Iom" secondAttribute="baseline" id="pg0-aa-a4h"/>
                 <constraint firstAttribute="centerY" secondItem="wvK-cx-5jL" secondAttribute="centerY" constant="40" id="sX6-Vm-sXK"/>
             </constraints>
             <nil key="simulatedStatusBarMetrics"/>
