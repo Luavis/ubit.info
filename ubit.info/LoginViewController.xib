@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="6250" systemVersion="14D136" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6244"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="LoginViewController" customModule="ubit_info" customModuleProvider="target">
+            <connections>
+                <outlet property="view" destination="iQi-2K-r1d" id="7Gu-4n-qSf"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iQi-2K-r1d">
+            <rect key="frame" x="0.0" y="0.0" width="314" height="541"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="6wJ-pt-aSW">
+                    <rect key="frame" x="0.0" y="487" width="314" height="4"/>
+                    <color key="backgroundColor" red="0.99215686270000003" green="0.2156862745" blue="0.40000000000000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="4" id="O9z-su-z7f"/>
+                    </constraints>
+                </view>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Ubit.info for iOS by luavis &amp; ssut" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tt3-HK-WGt">
+                    <rect key="frame" x="59" y="512" width="197" height="21"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="197" id="I13-rU-Wch"/>
+                        <constraint firstAttribute="height" constant="21" id="I1y-i4-wEa"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                    <color key="textColor" red="0.20000000000000001" green="0.20000000000000001" blue="0.20000000000000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="logo.png" translatesAutoresizingMaskIntoConstraints="NO" id="wvK-cx-5jL">
+                    <rect key="frame" x="18" y="173" width="278" height="115"/>
+                    <constraints>
+                        <constraint firstAttribute="width" secondItem="wvK-cx-5jL" secondAttribute="height" multiplier="39:16" id="UrO-Mk-P58"/>
+                    </constraints>
+                </imageView>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstAttribute="centerX" secondItem="tt3-HK-WGt" secondAttribute="centerX" id="4xh-UI-EpV"/>
+                <constraint firstAttribute="trailing" secondItem="6wJ-pt-aSW" secondAttribute="trailing" id="7lT-FQ-ByW"/>
+                <constraint firstAttribute="trailing" secondItem="wvK-cx-5jL" secondAttribute="trailing" constant="18" id="HnE-V1-m8b"/>
+                <constraint firstAttribute="bottom" secondItem="tt3-HK-WGt" secondAttribute="bottom" constant="8" id="Jzm-7w-HQG"/>
+                <constraint firstAttribute="bottom" secondItem="6wJ-pt-aSW" secondAttribute="bottom" constant="50" id="Uf6-AE-Xz3"/>
+                <constraint firstItem="wvK-cx-5jL" firstAttribute="leading" secondItem="iQi-2K-r1d" secondAttribute="leading" constant="18" id="YVu-Hh-Uf9"/>
+                <constraint firstItem="6wJ-pt-aSW" firstAttribute="leading" secondItem="iQi-2K-r1d" secondAttribute="leading" id="cgW-h6-xEM"/>
+                <constraint firstAttribute="centerY" secondItem="wvK-cx-5jL" secondAttribute="centerY" constant="40" id="sX6-Vm-sXK"/>
+            </constraints>
+            <nil key="simulatedStatusBarMetrics"/>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <point key="canvasLocation" x="364" y="373.5"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="logo.png" width="943" height="386"/>
+    </resources>
+</document>
